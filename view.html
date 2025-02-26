@@ -5,9 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Music Selector</title>
         <link rel="stylesheet" href="styles.css">
-        <script>
-
-        </script>
     </head>
     <body>
         <h1 class="stroke">All CDs I Own</h1>
@@ -108,5 +105,27 @@
                 </p>
             </div>
         </div>
+
+        <script>
+            //albums array, hard coded
+            let albums = [
+            "All to Zero", "Zero to One", "One to All", "All to Action", "Action to Answer", "Fever Part 3", "Movement", "Outlaw","Will", "Golden Hour: Part 1", "Golden Hour: Part 2",
+            "I Feel", "2", 
+            "Get Up", 
+            "Guess Who", "Crazy in Love", "Checkmate", 
+            "Fearless", "Antifragile", "Unforgiven", "Easy", "Crazy",
+            "Armageddon", "Whiplash",
+            "Feel Special", "Eyes Wide Open", "Taste of Love", "Formula of Love", "Between 1&2", "Ready to Be", "With You-th", "Zone", 
+            "Querencia",
+            "Pink Venom",
+            "Princess and the Pauper", "Wicked", 
+            "Dua Lipa", "Future Nostalgia", "Radical Optimism",
+            "My Everything", "Sweetener",
+            "brat", 
+            "ABBA Gold",
+            "Short n' Sweet"
+            ];
+            document.getElementById("numAlbums").innerHTML = "I have " + albums.length + " CDs.";
+        </script>
     </body>
 </html>
