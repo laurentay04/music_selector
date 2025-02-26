@@ -24,8 +24,6 @@ function domLoaded() {
         "Short n' Sweet"
     ];
 
-    document.getElementById("numAlbums").innerHTML = "I have " + albums.length + " CDs.";
-
     //when randomize is clicked, it will randomly select an album from the array of albums
     randomize.addEventListener("click", () => {
         let albums_length = albums.length;
@@ -45,136 +43,136 @@ function setAlbumCover(name) {
     const albumCover = document.getElementById("albumCover");
    switch (name) {
     case "All to Zero":
-        albumCover.src = "all_to_zero.jpg";
+        albumCover.src = "./covers/all_to_zero.jpg";
         break;
     case "Zero to One":
-        albumCover.src = "zero_to_one.png";
+        albumCover.src = "./covers/zero_to_one.png";
         break;
     case "One to All":
-        albumCover.src = "one_to_all.jpeg";
+        albumCover.src = "./covers/one_to_all.jpeg";
         break;
     case "All to Action":
-        albumCover.src = "all_to_action.png";
+        albumCover.src = "./covers/all_to_action.png";
         break;
     case "Action to Answer":
-        albumCover.src = "action_to_answer.png";
+        albumCover.src = "./covers/action_to_answer.png";
         break;
     case "Fever Part 3":
-        albumCover.src = "fever_part_3.jpg";
+        albumCover.src = "./covers/fever_part_3.jpg";
         break;
     case "Movement":
-        albumCover.src = "movement.png";
+        albumCover.src = "./covers/movement.png";
         break;
     case "Outlaw":
-        albumCover.src = "outlaw.png";
+        albumCover.src = "./covers/outlaw.png";
         break;
     case "Will": 
-        albumCover.src = "will.png";
+        albumCover.src = "./covers/will.png";
         break;
     case "Golden Hour: Part 1":
-        albumCover.src = "golden_hr_part1.jpg";
+        albumCover.src = "./covers/golden_hr_part1.jpg";
         break;
     case "Golden Hour: Part 2":
-        albumCover.src = "golden_hr_part2.jpg";
+        albumCover.src = "./covers/golden_hr_part2.jpg";
         break;
     case "I Feel":
-        albumCover.src = "i_feel.png";
+        albumCover.src = "./covers/i_feel.png";
         break;
     case "2":
-        albumCover.src = "2.png";
+        albumCover.src = "./covers/2.png";
         break;
     case "Get Up":
-        albumCover.src = "get_up.png";
+        albumCover.src = "./covers/get_up.png";
         break;
     case "Guess Who":
-        albumCover.src = "guess_who.jpg";
+        albumCover.src = "./covers/guess_who.jpg";
         break;
     case "Crazy in Love":
-        albumCover.src = "crazy_in_love.jpg";
+        albumCover.src = "./covers/crazy_in_love.jpg";
         break;
     case "Fearless":
-        albumCover.src = "fearless.png";
+        albumCover.src = "./covers/fearless.png";
         break;
     case "Antifragile":
-        albumCover.src = "antifragile.png";
+        albumCover.src = "./covers/antifragile.png";
         break;
     case "Unforgiven":
-        albumCover.src = "unforgiven.png";
+        albumCover.src = "./covers/unforgiven.png";
         break;
     case "Easy":
-        albumCover.src = "easy.png";
+        albumCover.src = "./covers/easy.png";
         break;
     case "Crazy":
-        albumCover.src = "crazy.png";
+        albumCover.src = "./covers/crazy.png";
         break;
     case "Armageddon":
-        albumCover.src = "armageddon.jpg";
+        albumCover.src = "./covers/armageddon.jpg";
         break;
     case "Whiplash":
-        albumCover.src = "whiplash.png";
+        albumCover.src = "./covers/whiplash.png";
         break;
     case "Feel Special":
-        albumCover.src = "feel_special.png";
+        albumCover.src = "./covers/feel_special.png";
         break;
     case "Eyes Wide Open":
-        albumCover.src = "eyes_wide_open.jpg";
+        albumCover.src = "./covers/eyes_wide_open.jpg";
         break;
     case "Tase of Love":
-        albumCover.src = "taste_of_love.png";
+        albumCover.src = "./covers/taste_of_love.png";
         break;
     case "Formula of Love":
-        albumCover.src = "formula_of_love.png";
+        albumCover.src = "./covers/formula_of_love.png";
         break;
     case "Between 1&2":
-        albumCover.src = "between_1_2.png";
+        albumCover.src = "./covers/between_1_2.png";
         break;
     case "Ready to Be":
-        albumCover.src = "ready_to_be.jpg";
+        albumCover.src = "./covers/ready_to_be.jpg";
         break;
     case "With You-th":
-        albumCover.src = "with_youth.png";
+        albumCover.src = "./covers/with_youth.png";
         break;
     case "Zone":
-        albumCover.src = "zone.png";
+        albumCover.src = "./covers/zone.png";
         break;
     case "Querencia":
-        albumCover.src = "querencia.jpg";
+        albumCover.src = "./covers/querencia.jpg";
         break;
     case "Pink Venom":
-        albumCover.src = "pink_venom.jpg";
+        albumCover.src = "./covers/pink_venom.jpg";
         break;
     case "Checkmate":
-        albumCover.src = "checkmate.png";
+        albumCover.src = "./covers/checkmate.png";
         break;
     case "Princess and the Pauper":
-        albumCover.src = "princess_pauper.jpg";
+        albumCover.src = "./covers/princess_pauper.jpg";
         break;
     case "Wicked":
-        albumCover.src = "wicked.jpg";
+        albumCover.src = "./covers/wicked.jpg";
         break;
     case "Dua Lipa":
-        albumCover.src = "dua_lipa.jpg";
+        albumCover.src = "./covers/dua_lipa.jpg";
         break;
     case "Future Nostalgia":
-        albumCover.src = "future_nostalgia.png";
+        albumCover.src = "./covers/future_nostalgia.png";
         break;
     case "Radical Optimism":
-        albumCover.src = "radical_optimism.png";
+        albumCover.src = "./covers/radical_optimism.png";
         break;
     case "My Everything":
-        albumCover.src = "my_everything.png";
+        albumCover.src = "./covers/my_everything.png";
         break;
     case "Sweetener":
-        albumCover.src = "sweetener.jpg";
+        albumCover.src = "./covers/sweetener.jpg";
         break;
     case "Short n' Sweet":
-        albumCover.src = "short_n_sweet.png";
+        albumCover.src = "./covers/short_n_sweet.png";
         break;
     case "brat":
-        albumCover.src = "brat.png";
+        albumCover.src = "./covers/brat.png";
         break;
     case "ABBA Gold":
-        albumCover.src = "abba_gold.jpg";
+        albumCover.src = "./covers/abba_gold.jpg";
         break;
     default:
         break;
