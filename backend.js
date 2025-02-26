@@ -24,6 +24,8 @@ function domLoaded() {
         "Short n' Sweet"
     ];
 
+    document.getElementById("numAlbums").innerHTML = "I have " + albums.length + " CDs.";
+
     //when randomize is clicked, it will randomly select an album from the array of albums
     randomize.addEventListener("click", () => {
         let albums_length = albums.length;
