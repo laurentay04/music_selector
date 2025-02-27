@@ -7,7 +7,7 @@ function domLoaded() {
 
     //albums array, hard coded
     let albums = [
-        "All to Zero", "Zero to One", "One to All", "All to Action", "Action to Answer", "Fever Part 3", "Movement", "Outlaw","Will", "Golden Hour: Part 1", "Golden Hour: Part 2",
+        "All to Zero", "Zero to One", "One to All", "All to Action", "Action to Answer", "Fever Part 3", "Movement", "Outlaw","Will", "Golden Hour Part 1", "Golden Hour Part 2",
         "I Feel", "2", 
         "Get Up", 
         "Guess Who", "Crazy in Love", "Checkmate", 
@@ -39,142 +39,14 @@ function domLoaded() {
     });
 }
 
-function setAlbumCover(name) {
+   // function to set the album cover based on album name or image data URL
+   function setAlbumCover(album) {
     const albumCover = document.getElementById("albumCover");
-   switch (name) {
-    case "All to Zero":
-        albumCover.src = "./covers/all_to_zero.jpg";
-        break;
-    case "Zero to One":
-        albumCover.src = "./covers/zero_to_one.png";
-        break;
-    case "One to All":
-        albumCover.src = "./covers/one_to_all.jpeg";
-        break;
-    case "All to Action":
-        albumCover.src = "./covers/all_to_action.png";
-        break;
-    case "Action to Answer":
-        albumCover.src = "./covers/action_to_answer.png";
-        break;
-    case "Fever Part 3":
-        albumCover.src = "./covers/fever_part_3.jpg";
-        break;
-    case "Movement":
-        albumCover.src = "./covers/movement.png";
-        break;
-    case "Outlaw":
-        albumCover.src = "./covers/outlaw.png";
-        break;
-    case "Will": 
-        albumCover.src = "./covers/will.png";
-        break;
-    case "Golden Hour: Part 1":
-        albumCover.src = "./covers/golden_hr_part1.jpg";
-        break;
-    case "Golden Hour: Part 2":
-        albumCover.src = "./covers/golden_hr_part2.jpg";
-        break;
-    case "I Feel":
-        albumCover.src = "./covers/i_feel.png";
-        break;
-    case "2":
-        albumCover.src = "./covers/2.png";
-        break;
-    case "Get Up":
-        albumCover.src = "./covers/get_up.png";
-        break;
-    case "Guess Who":
-        albumCover.src = "./covers/guess_who.jpg";
-        break;
-    case "Crazy in Love":
-        albumCover.src = "./covers/crazy_in_love.jpg";
-        break;
-    case "Fearless":
-        albumCover.src = "./covers/fearless.png";
-        break;
-    case "Antifragile":
-        albumCover.src = "./covers/antifragile.png";
-        break;
-    case "Unforgiven":
-        albumCover.src = "./covers/unforgiven.png";
-        break;
-    case "Easy":
-        albumCover.src = "./covers/easy.png";
-        break;
-    case "Crazy":
-        albumCover.src = "./covers/crazy.png";
-        break;
-    case "Armageddon":
-        albumCover.src = "./covers/armageddon.jpg";
-        break;
-    case "Whiplash":
-        albumCover.src = "./covers/whiplash.png";
-        break;
-    case "Feel Special":
-        albumCover.src = "./covers/feel_special.png";
-        break;
-    case "Eyes Wide Open":
-        albumCover.src = "./covers/eyes_wide_open.jpg";
-        break;
-    case "Tase of Love":
-        albumCover.src = "./covers/taste_of_love.png";
-        break;
-    case "Formula of Love":
-        albumCover.src = "./covers/formula_of_love.png";
-        break;
-    case "Between 1&2":
-        albumCover.src = "./covers/between_1_2.png";
-        break;
-    case "Ready to Be":
-        albumCover.src = "./covers/ready_to_be.jpg";
-        break;
-    case "With You-th":
-        albumCover.src = "./covers/with_youth.png";
-        break;
-    case "Zone":
-        albumCover.src = "./covers/zone.png";
-        break;
-    case "Querencia":
-        albumCover.src = "./covers/querencia.jpg";
-        break;
-    case "Pink Venom":
-        albumCover.src = "./covers/pink_venom.jpg";
-        break;
-    case "Checkmate":
-        albumCover.src = "./covers/checkmate.png";
-        break;
-    case "Princess and the Pauper":
-        albumCover.src = "./covers/princess_pauper.jpg";
-        break;
-    case "Wicked":
-        albumCover.src = "./covers/wicked.jpg";
-        break;
-    case "Dua Lipa":
-        albumCover.src = "./covers/dua_lipa.jpg";
-        break;
-    case "Future Nostalgia":
-        albumCover.src = "./covers/future_nostalgia.png";
-        break;
-    case "Radical Optimism":
-        albumCover.src = "./covers/radical_optimism.png";
-        break;
-    case "My Everything":
-        albumCover.src = "./covers/my_everything.png";
-        break;
-    case "Sweetener":
-        albumCover.src = "./covers/sweetener.jpg";
-        break;
-    case "Short n' Sweet":
-        albumCover.src = "./covers/short_n_sweet.png";
-        break;
-    case "brat":
-        albumCover.src = "./covers/brat.png";
-        break;
-    case "ABBA Gold":
-        albumCover.src = "./covers/abba_gold.jpg";
-        break;
-    default:
-        break;
-   }
+
+    //if the album is an image URL, use it
+    if (typeof album === "string") {
+        albumCover.src = `./covers/${album}.png`;  // fallback for existing albums
+    } else {
+        albumCover.src = album.image;  // use uploaded image
+    }
 }

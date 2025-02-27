@@ -10,14 +10,24 @@
     <body>
         <h1 class="stroke">Music Selector</h1>
 
-        <div>
+        <div class="topButtons">
             <input id="randomize" type="button" value="Randomize">
             <a class="button view" href="view.html">View CDs</a>
         </div>
 
-        <img id="albumCover" src="./covers/cd.jpg" width="300px" height="300px">
-        <p id="playing"><strong>Now Playing: </strong></p>
-        <p id="name">Name of Album</p>
+        <section>
+            <img id="albumCover" src="cd.jpg" width="300px" height="300px">
+            <p id="playing"><strong>Now Playing: </strong></p>
+            <p id="name">Name of Album</p>
+        </section>
+
+        <div class="bottomButtons">
+            <label for="cover">Choose Album Cover</label><br>
+            <input id="cover" type="file" name="cover"><br>
+            <label for="albumName">Enter Album Name</label><br>
+            <input id="albumName" type="text" name="albumName"><br>
+            <input id="add" type="button" value="Add CD">
+        </div>
         
     </body>
 </html>
