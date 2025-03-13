@@ -21,7 +21,12 @@ function domLoaded() {
         "My Everything", "Sweetener",
         "brat", 
         "ABBA Gold",
-        "Short n' Sweet"
+        "Short n' Sweet",
+        "Now That's What I Call K-Pop",
+        "So Close to What",
+        "The Rise and Fall of a Midwest Princess",
+        "STARFUCKER", 
+        "Mayhem"
     ];
 
     //when randomize is clicked, it will randomly select an album from the array of albums

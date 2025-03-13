@@ -59,6 +59,11 @@ input:hover {
     color: white;
 }
 
+a:hover {
+    background-color: #704758;
+    color: white;
+}
+
 #albumCover {
     margin-top: 50px;
 }
@@ -75,8 +80,8 @@ p {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 5px;
-    margin-left: 150px;
+    column-gap: 10px;
+    margin-left: 300px;
 }
 
 .text {
@@ -84,9 +89,16 @@ p {
 }
 
 p.block {
-    line-height: 2.33;
+    line-height: 2.55;
+    font-size: 27px;
 }
 
 #add {
     margin-left: 150px;
+}
+
+.back {
+    position: fixed;
+    top: 0;
+    left: 0;
 }
